@@ -1,0 +1,121 @@
+
+*{
+    margin: 0px 0px 0px 0px ;
+}
+body{
+    display: flex ;
+    background-image: url('discover_.jpg');
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    /* display: flex; */
+    background-color: black;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+   height: 900px;
+}
+.main_div{
+    color: white;
+
+}
+.main_div h1{
+    margin: 30px  0px  0px  30px;
+    font-size: 60px;
+
+}
+
+ul{
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    width: 150px;
+   height: 600px;
+}
+li{
+    color: white;
+    list-style: none;
+    padding: 5px 0px;
+    margin-top: 50px; 
+}
+.logo{
+    margin: 20px 0px 45px 0px ;  
+}
+
+#nav i{
+    margin-right: 5px;
+}
+.home{
+ background: none;
+ border: none;
+ color: white;
+ font-size: 17px;
+ cursor: pointer;
+}
+.artists{
+    border: 2px solid white;
+    width: 250px;
+    height: 300px;
+    margin: 0px  0px 0px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.container{
+    /* border: 1px solid white; */
+    margin: 0px  0px 0px 30px;
+    height: 300px;
+}
+img{
+    margin: 0px  10px 0px 30px;
+    float: left;
+    text-align: left;
+}
+p{
+    margin: 0px 0px 0px 0px ;
+}
+.writeups{
+    border: 1px solid rgba(0, 0, 0, 0);
+    
+}
+.container h2{
+    margin-top: 175px;
+}
+.box{
+    position: absolute;
+    margin: 30px 0px 0px 30px ;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.jo{
+    margin: 0px;
+}
+marquee{
+    position: absolute;
+    /* border: 1px solid white; */
+    width:200px;
+    margin-top: 15px;
+}
+.next_icon{
+    margin: 15px 0px 0px 270px;
+}
+.iconplay{
+    position: absolute;
+    margin: 15px 0px 0px -60px;
+}
+.sba{
+    margin: 20px 0px 0px 30px;
+}
+@media screen and (max-width: 500px){
+    .main_div h1{
+        font-size: 30px;
+
+    }
+}
+@media screen and (max-width: 800px){
+    .main_div h1{
+        font-size: 50px;
+
+    }
+}

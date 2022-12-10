@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    background-image: url('home_backgroung.jpg');
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    display: flex;
+    background-color: black;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+   height: 700px;
+}
+
+ul{
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    width: 150px;
+   height: 500px;
+}
+li{
+    color: white;
+    list-style: none;
+    padding: 5px 0px;
+    margin-top: 30px; 
+}
+.logo{
+    margin: 50px 0px 0px 0px;
+}
+input{
+    display: inline-flex;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+    text-align: right;
+    width: 600px;
+    height: 35px;
+    font-size: 17px;
+    border-radius: 40px;
+    margin: 30px 0px 0px 250px;
+    background: transparent;
+
+}
+
+#nav i{
+    margin-right: 5px;
+}
+.popup {
+    border-radius: 20px;
+    margin: 30px 0px  0px 20px;
+    transform: scale(0.1);
+    top: 0;
+    right: 10%;
+    float: right;
+    border: 3px solid black;
+    border: none;
+    background-color: rgb(68, 68, 68);
+    width: 200px;
+    height: 200px;
+    /* text-align: center; */
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+
+}
+.openpopup{
+    visibility: visible;
+    top: 50;
+    transform: scale(1);
+    
+}
+.popup h3{
+   width: 90px;
+    color: white;
+    margin: 17px 0px 0px 17px;
+
+}
+.popup li{
+    margin: 17px 0px 0px 17px;
+}
+.x_button{
+    background:none;
+    border: none;
+    /* margin: 50px 0px  0px 170px; */
+}
+.x_button i{
+    color: white;
+}
+.popup h5{
+    color: white;
+    margin: 100px  50px  0px  0px ;
+}
+.dropdown {
+    cursor: pointer;
+    margin: 15px  0px 0px 10px;
+    color: white;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    background-color: #808080;
+    min-width: 148px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .discover button{
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin: 30px  0px 0px 5px;
+     background-color: rgb(153, 0, 0);
+     font-size: 15px;
+    
+  }
+  .discover button:hover{
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} 
+.closepopup{
+    float: right;
+ margin: 130px 10px  0px 0px; 
+
+}
+.sign_out{
+    margin: 0px 0px 0px 20px;
+}
+.sign_out a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    width: 700px;
+    height: 70px;
+    margin: 50px 0px 0px 175px;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+.container img{
+    border-radius: 10px;
+}
+
+marquee{
+    color: white;
+    position: absolute;
+    width: 450px;
+    /* border:1px solid rgb(255, 255, 255)  */
+    margin: 20px 0px 0px 10px;
+    font-size: 23px;
+}
+.next_icon{
+    position: absolute;
+    margin: 25px 0px 0px 510px;
+}
+.iconplay{
+    position: absolute;
+    margin: 25px  0px 0px 480px;
+}
+.container_2{
+    margin: 30px 0px 0px 175px;
+    background-color: black;
+    border-radius: 10px;
+    width: 700px;
+
+}
+@media screen and (max-width: 1090px){
+    input{
+        width: 400px;
+    }
+    .container{
+        width: 500px;
+    }
+    marquee{
+        font-size: 13px;
+    }
+    .iconplay{
+        margin: 25px 0px 0px 280px;
+    }
+    .next_icon{
+        margin:  25px 0px 0px 318px;
+    }
+   }
+   @media screen and (max-width: 900px){
+    input{
+        width: 200px;
+        margin: 30px 0px 0px 100px;
+    }
+    .container{
+        margin: 50px 0px 0px 90px;
+    }
+    
+    }

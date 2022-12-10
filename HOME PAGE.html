@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="HOME PAGE.css">
+
+</head> 
+<body>
+    <nav>
+        <ul id="nav">
+            <img class="logo" src="logo_new.png" width="100px" height="36.17 px">
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <li><i class="fa-solid fa-download"></i>Downloaded</li>
+            <li><i class="fa-solid fa-microphone-lines"></i>Artists</li>
+            <li><i class="fa-solid fa-compact-disc"></i>Albums</li>
+            <li>Playlists ></li>
+            <div class="discover"><button onclick="location.href='discover.html'   ">Discover</button></div>
+            
+        </ul>
+    </nav>
+    
+    <div class="main_div">
+                      <input type="search" placeholder="search">
+        <div style=" display: inline; margin-left: 20px">
+                          <button  onclick="openpopup()"
+                           style="color: #fff; background: none; border:none">
+                              <i class="fa-solid fa-gear"></i>
+                          </button>
+                  <div class="popup"  id="popup">
+                            <h3>Settings</h3>
+                            <div class="dropdown">
+                                <span>Accessibility</span>
+                                <div class="dropdown-content">
+                                <p>Light Mode></p>
+                                <p>Zoom></p>
+                                <p>Display & Text size></p>
+                                
+                                </div>
+                              </div>
+                            <div class="closepopup"><button  onclick="closepopup()" class="x_button">
+                                <i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div class="sign_out"><h5> <a href="index.html">Sign out</a></h5></div>
+                          
+                 </div>
+        </div>
+         <div class="container">
+                   <img src="cover_img.jpg" width="139.69 px" height="70px">
+                   <marquee behavior="scroll" direction="right" scrollamount="0" id="song1mar">JON_BELLION__ALL_TIME_LOW</marquee>
+                   <img class="next_icon" id="nextsong" src="next_icon.png"  width="30px" height="19.25 px">
+                   <img class="iconplay" id="playsong1" src="Playa_icon.png" width="15.85 px" height="19.25 px"> 
+          </div>
+
+
+
+          <div class="container">
+                   <img src="cover_img_2.jpg" width="140.2 px" height="70px">
+                   <marquee behavior="scroll" direction="right" scrollamount="0" id="song2mar">KENDRICK_LAMAR-N95_</marquee>
+                   <img class="next_icon" id="nextsong2" src="next_icon.png"  width="30px" height="19.25 px">
+                   <img class="iconplay" id="playsong2" src="Playa_icon.png" width="15.85 px" height="19.25 px"> 
+          </div>
+
+          <div class="container">
+            <img src="cover_img_3.jpg" width="140.2 px" height="70px">
+            <marquee behavior="scroll" direction="right" scrollamount="0" id="song3mar">JAE5-PROPELLER-FT-DAVE-BNXN_</marquee>
+            <img class="next_icon" id="nextsong3" src="next_icon.png"  width="30px" height="19.25 px">
+            <img class="iconplay" id="playsong3" src="Playa_icon.png" width="15.85 px" height="19.25 px"> 
+   </div>
+
+      
+        
+        
+        </div>
+    <audio  id="song1">
+        <source src="Jon_Bellion_-_All_Time_Low.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="song2">
+        <source src="KENDRICK_LAMAR-N95_.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="song3">
+        <source src="JAE5-PROPELLER-FT-DAVE-BNXN_.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        // setting popup script
+        let popup = document.getElementById("popup")
+        function openpopup(){
+           popup.classList.add("openpopup") 
+        }
+        function closepopup() {
+            popup.classList.remove("openpopup");
+         }
+       
+       
+         //  SONG 1 SCRIPT
+         var song1=document.getElementById("song1")
+         var playsong1=document.getElementById("playsong1")
+        
+         playsong1.onclick=function(){
+           
+            if(song1.paused ){    
+                //pause all songs
+                stopAllSongs();
+               
+                // play song
+                song1.play();
+                playsong1.src="pause_icon.png"
+                song1.play();
+                song1mar.setAttribute("scrollamount", 3);
+                song1mar.start();
+            }
+        
+        
+
+            else{
+                song1.pause();
+                playsong1.src="playa_icon.png"
+                song1.pause();
+                        song1mar.setAttribute("scrollamount", 0);
+                        song1mar.stop()
+            }
+         }
+
+       var nextsong=document.getElementById("nextsong")
+       nextsong.onclick=function(){
+        if(nextsong.click){
+            stopAllSongs();
+            
+            song2.play();
+            playsong2.src="pause_icon.png"
+            song2mar.setAttribute("scrollamount", 3);
+            song2mar.start()
+        }
+       }
+            
+         
+     
+
+
+
+
+
+        //  SONG 2 SCRIPT
+        var song2=document.getElementById("song2")
+         var playsong2=document.getElementById("playsong2")
+         playsong2.onclick=function(){
+            if(song2.paused ){
+
+                // pause all songs
+                stopAllSongs();
+                
+                //play song 2
+                song2.play();
+                playsong2.src="pause_icon.png"
+                song2.play();
+                song2mar.setAttribute("scrollamount", 3);
+                song2mar.start();
+            }
+            else{
+                song2.pause();
+                playsong2.src="playa_icon.png"
+                song2.pause();
+                        song2mar.setAttribute("scrollamount", 0);
+                        song2mar.stop()
+            }
+         }
+
+
+         var nextsong2=document.getElementById("nextsong2")
+       nextsong2.onclick=function(){
+        if(nextsong2.click){
+            stopAllSongs();
+            
+            song3.play();
+            playsong3.src="pause_icon.png"
+            song3mar.setAttribute("scrollamount", 3);
+            song3mar.start()
+
+
+
+
+        }
+       }
+
+
+
+
+         
+        //  SONG 3 SCRIPT
+        var song3=document.getElementById("song3")
+         var playsong3=document.getElementById("playsong3")
+         playsong3.onclick=function(){
+            if(song3.paused ){
+               
+               // pause all songs
+                stopAllSongs();
+
+                //play song 3
+               
+                song3.play();
+                playsong3.src="pause_icon.png"
+                song3.play();
+                song3mar.setAttribute("scrollamount", 3);
+                song3mar.start();  
+         
+       
+            }
+            else{
+                song3.pause();
+                playsong3.src="playa_icon.png"
+                song3.pause();
+                        song3mar.setAttribute("scrollamount", 0);
+                        song3mar.stop()
+            }
+
+            
+         }
+         var nextsong3=document.getElementById("nextsong3")
+         nextsong3.onclick=function(){
+            if(nextsong3.click){
+                stopAllSongs();
+
+                song1.play();
+                playsong1.src="pause_icon.png"
+                song1mar.setAttribute("scrollamount", 3);
+                song1mar.start()
+
+         }
+        }
+
+    function stopAllSongs(){
+
+                song1.pause();
+                playsong1.src = "Playa_icon.png";
+                song1mar.setAttribute("scrollamount", 0);
+                song1mar.stop();
+
+
+                song2.pause();
+                playsong2.src = "Playa_icon.png";
+                song2mar.setAttribute("scrollamount", 0);
+                song2mar.stop();
+
+
+                song3.pause();
+                playsong3.src = "Playa_icon.png";
+                song3mar.setAttribute("scrollamount", 0);
+                song3mar.stop();
+
+    }
+         
+
+    </script>
+    
+</body>
+</html>                                     

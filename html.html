@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+
+           
+           var  playjon = document.getElementById("playjon")
+            var jonsong = document.getElementById("jonsong")
+            var jonmarquee = document.getElementById("jonmarquee")
+
+               playjon.onclick=function(){
+                    if(jonsong.paused){
+                        playjon.src = "pause_icon.png";
+
+                        //pause all other songs playng
+                        kensong.pause();
+                        playken.src="Playa_icon.png";
+                        kenmarquee.setAttribute("scrollamount", 0);
+                        kenmarquee.stop()
+
+                        jaesong.pause();
+                        playjae.src="Playa_icon.png";
+                        jaemarquee.setAttribute("scrollamount", 0);
+                        jaemarquee.stop()
+                        
+                        
+                        
+                        //Play song
+                         jonsong.play();
+                         jonmarquee.setAttribute("scrollamount", 3);
+                         jonmarquee.start();
+                    } else {
+                        playjon.src = "Playa_icon.png";
+                        jonsong.pause();
+                        jonmarquee.setAttribute("scrollamount", 0);
+                        jonmarquee.stop()
+                    }
+               }
+             
+             
+               var kensong=document.getElementById("kensong")
+               var playken=document.getElementById("playken")
+               var kenmarquee = document.getElementById("kenmarquee")
+
+               playken.onclick=function(){
+                if(kensong.paused){
+                    playken.src="pause_icon.png";
+
+                    //pause all other songs playng
+                    jonsong.pause();
+                    playjon.src = "Playa_icon.png";
+                    jonmarquee.setAttribute("scrollamount", 0);
+                    jonmarquee.stop()
+
+                   jaesong.pause();
+                  playjae.src = "Playa_icon.png";
+                   jaemarquee.setAttribute("scrollamount", 0);
+                   jaemarquee.stop()
+                        
+
+                    //Play song
+                    kensong.play();
+                    kenmarquee.setAttribute("scrollamount", 3);
+                    kenmarquee.start();
+                }
+                else{
+                    playken.src="Playa_icon.png";
+                    kensong.pause();
+                    kenmarquee.setAttribute("scrollamount", 0);
+                    kenmarquee.stop()
+
+                }
+               }
+
+
+               var  playjae = document.getElementById("playjae")
+            var jaesong = document.getElementById("jaesong")
+            var jaemarquee = document.getElementById("jaemarquee")
+
+               playjae.onclick=function(){
+                    if(jaesong.paused){
+                        playjae.src = "pause_icon.png";
+
+                        //pause all other songs playng
+                        jonsong.pause();
+                        playjon.src="Playa_icon.png";
+                        jonmarquee.setAttribute("scrollamount", 0);
+                        jonmarquee.stop()
+
+                        kensong.pause();
+                        playken.src="Playa_icon.png";
+                        kenmarquee.setAttribute("scrollamount", 0);
+                        kenmarquee.stop()
+                        
+                        
+                        
+                        
+                        //Play song
+                         jaesong.play();
+                         jaemarquee.setAttribute("scrollamount", 3);
+                         jaemarquee.start();
+                    } else {
+                        playjae.src = "Playa_icon.png";
+                        jaesong.pause();
+                        jaemarquee.setAttribute("scrollamount", 0);
+                        jaemarquee.stop()
+                    }
+               }
+             
+
+         
+    </script>
+    
+</body>
+</html>

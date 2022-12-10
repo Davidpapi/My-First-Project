@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin:  0px;
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    display: flex;
+    background-color: black;
+    background-image: url('background_3.jpg');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+    height: 700px;
+}
+.div_1{
+    display: flex;
+    /* border: 3px solid white; */
+    width: 1000px;
+    height: 500px;
+    margin: 100px  0px  0px  170px;
+    background-image: url('log_in_pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    border-radius: 30px;
+    box-shadow:rgba(82, 7, 7, 0.8) 0px 0px 15px, inset rgba(255, 0, 0, 0.15) 0px 0px 20px;
+
+}
+.sheet{
+    /* border: 3px solid white; */
+    width: 500px;
+    height: 500px;
+    margin: 20px  0px  0px  500px;
+   
+}
+.sign_up{
+    text-align: center;
+    margin: 30px 0px 0px 0px ;
+    color: white;
+}
+input{
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+.input_1{
+     margin: 20px  0px 0px 130px;
+     border: none;
+     
+}
+.on_top{
+    color: white;
+    margin: 0px  0px  0px 15px;
+}
+.btn{
+    margin: 30px 0px 0px 210px;
+
+
+    /* background-color: rgb(153, 0, 0); */
+}
+button{
+    font-family: 'Montserrat', Courier, monospace;
+    background-color: rgb(153, 0, 0);
+    padding: 13px;
+    color: white;
+    border: none;
+    border-radius: 20px ;
+    transition: all 0.3s linear;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+button:hover{
+-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+-moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+-o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} 
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0  30px  30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+.popup img{
+    margin-top: -50px;
+    border-radius: 50%;
+    
+}
+.openpopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+@media screen and (max-width:800px;){
+    .div_1{
+        width: 500px;
+    }
+}
+
+
+
+
+
+
+

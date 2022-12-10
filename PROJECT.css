@@ -1,0 +1,207 @@
+*{
+    padding: 0px;
+    margin:  0px;
+}
+body{
+    background-color: black;
+    font-family:  'Montserrat Alternates', sans-serif;
+}
+
+
+nav{
+    display: block;
+    margin : 10px 30px;
+}
+
+ul{
+    display: flex;
+}
+li{
+    display: inline-flex;
+    list-style: none;
+    padding: 0px  15px  0px  5px ;
+    float: left;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+li:hover{
+    transform: scale(1.1);
+}
+.logo{
+  margin: 0px  15px  0px auto;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.sectionbox{
+    max-width: 100%;
+    min-height:  500px;
+    
+    background-image: url('background_2.jpg') ;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+
+    padding:  10px;
+
+    
+}
+
+
+
+.home{
+    font-family: 'Montserrat', Courier, monospace;
+    background-image: url('background_1.jpg')  !important;
+}
+.div_i{
+    color: white;
+    font-size: 60px;
+    margin: 55px  0px  0px 30px;
+}
+.stream_{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sectionbox_1{
+    font-family: 'Montserrat', Courier, monospace;
+    
+    max-width: 100%;
+    min-height:  500px;
+    
+    background-image: url('background_2.jpg') ;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+   padding:  10px;
+   color: white;
+}
+.div_ii{
+    float: right;
+    margin: 150px  100px 0px  0px;
+    font-size:xx-large ;
+}
+.div_iii{
+float: left;
+margin: 10px 10px 0px 0px ;
+
+}
+.A{
+    color: black;
+}
+
+@media screen and (max-width: 730px){
+ .div_i h2{
+    /* font-size: 60px; */
+ }
+}
+@media screen and (max-width: 470px){
+    .div_i h2{
+       font-size: 30px;
+    }
+    .div_i h4{
+        font-size: 18px;
+    }
+   }
+   @media screen and (max-width: 730px){
+    .div_ii h2{
+       /* font-size: 30px; */
+    }
+   }
+   @media screen and (max-width: 730px){
+    .div_i h2{
+       /* font-size: 60px; */
+
+   }
+}
+   
+
+
+
+
+
+
+
+
+.cover{
+    margin: top 0px; 
+    background-image:  url('background_1.jpg')  ;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+  
+   height: 1000px;
+   display: block;
+}
+.div_1{
+    margin: 50px  0px  0px  30px ;
+    font-size: 55px;
+    color: white;
+}
+.stream{
+    font-size: 20px;
+    
+}
+
+.div_2{
+    margin: 0px;
+    /* background-image: url('background_2.jpg') ; */
+    background-size: cover ;
+    background-position: center;
+    background-repeat: none;
+    /* border: 3px solid black; */
+    height: 500px;
+    padding: 0 40px
+
+}
+
+.melody{
+    font-size:  64px;
+    margin: 10px 0px 30px 0px;
+}
+
+
+.listen{
+    margin: 200px  60px  0px  0px ;
+    font-size: 50px;
+    color: white;
+    float: right;
+}
+.div_3{
+    margin: 340px 0px 0px 0px ;
+    float: right;
+    
+}
+button {
+    color: black ;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    
+}
+button:hover{
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} 
+.join_now{
+    color: black;
+}
+

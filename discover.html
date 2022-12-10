@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="discover.css">
+</head>
+<nav>
+    <ul id="nav">
+        <img class="logo" src="logo_new.png" width="100px" height="36.17 px">
+        <li><i class="fa-solid fa-house"><button class="home" onclick="location.href ='HOME PAGE.html '  ">Home</button></i></li>
+        <li><i class="fa-solid fa-download"></i>Downloaded</li>
+        <li><i class="fa-solid fa-microphone-lines"></i>Artists</li>
+        <li><i class="fa-solid fa-compact-disc"></i>Albums</li>
+        <li>Playlists ></li>
+        
+    </ul>
+</nav>
+<body>
+    <div class="main_div">
+        <h1>Discover new songs, <br> and artists...</h1>
+        <div class="container">
+        <img src="jozzy.jpg" width="250px" height="300px" >
+    <div class="writeups">
+            <h2>Jozzy Rozzy</h2>
+            <p>Joseph Ayeni Olamide Aka Jozzy Rozzy. <br>
+                started music right from a childhood With them help of his team and family, <br>
+                he has been able to drop 6 good tracks with over 1 thousand plays on each...</h4></p>
+            </div>
+            <h3 class="sba">Songs by this artist</h3>
+            <div class="box">
+                <img class="jo" src="jo_COVER.jpg" width="87.26 px" height="50px">
+                <marquee behavior="scroll" direction="right" scrollamount="0" id="songmar">JOZZY ROZZY SONG</marquee>
+                <img class="next_icon" id="nextsong" src="next_icon.png"  width="30px" height="19.25 px">
+                <img class="iconplay" id="icon1" src="Playa_icon.png" width="15.85 px" height="19.25 px"> 
+                
+       </div>
+       
+                </div>
+    
+
+    </div>
+
+
+
+    <audio id="mysong">
+<source src="JOZZY ROZZY__SONG.mp3" type="audio/mp3" >
+</audio>
+
+<script>
+var mysong = document.getElementById("mysong")
+var icon1 = document.getElementById("icon1")
+var songmar = document.getElementById("songmar")
+icon1.onclick=function(){
+if(mysong.paused){
+    mysong.play();
+    icon1.src="pause_icon.png"
+
+
+    songmar.setAttribute("scrollamount", 3);
+songmar.start()
+}
+else{
+    mysong.pause();
+    icon1.src="playa_icon.png"
+
+    songmar.setAttribute("scrollamount", 0);
+    songmar.stop()
+}
+}
+    
+
+
+    
+
+
+</script>
+
+
+   
+    
+</body>
+</html>
